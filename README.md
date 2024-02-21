@@ -23,3 +23,5 @@ Berdasarkan latar belakang di atas, kita dapat menentukan pernyataan masalah seb
 + Menerapkan beberapa metode dalam melakukan pemrosesan data seperti mengganti missing value dengan nilai rata-rata, membagi dataset menjadi data latih dan data pengujian, serta menerapkan upsampling ketika data mengalami ketidakseimbangan
 + Menggunakan lebih dari 1 model yang dapat menyelesaikan masalah klasifikasi. Algoritma yang dipakai adalah K-Nearest Neighbour, Random Forest, dan Suport Vector Classification
 
+# Data Understanding
+Dataset yang digunakan dalam proyek ini merupakan data yang berisikan beberapa parameter yang digunakan dalam menentukan kualitas air. Dataset ini dapat diunduh di [Kaggle: Water Quality](https://www.kaggle.com/datasets/adityakadiwal/water-potability/data)
