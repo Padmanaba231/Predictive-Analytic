@@ -4,6 +4,7 @@
 ### Latar belakang
 ![Water](https://github.com/Padmanaba231/Predictive-Analytic/blob/7f9e27ca397cb59ef501e8a81c9b9a271dd7fc9a/ML/IMG/download%20(4).jpg)
 Air merupakan kebutuhan utama umat manusia. Kehidupan kita tidak pernah lepas akan kebutuhan terhadap air. Terutama air bersih dan air yang layak untuk dikonsumsi. Oleh karena itu, Penyediaan air dan sanitasi yang baik, serta pengelolaan sumber daya air yang baik merupakan hal yang wajib dalam menjaga kualitas air agar bisa digunakan dengan aman oleh masyarakat. Jika tidak diperhatikan dengan benar dan teliti, air tersebut dapat terkontaminasi dan tentunya menyebabkan air tersebut tidak layak dikonsumsi. Air yang terkontaminasi dan sanitasi yang tidak memadai memfasilitasi penularan penyakit seperti kolera, diare, disentri, hepatitis A, tifoid, dan polio. Mereka yang tidak memiliki akses ke air bersih dan sanitasi menghadapi risiko kesehatan yang dapat dicegah. Sehingga pemantauan terhadap kualitas air sangatlah penting untuk terus dipantau. Kita dapat memanfaatkan pendekatan Machine Learning dalam membantu mengklasifikasikan antara air yang layak dikonsumsi dan yang tidak layak dikonsumsi.
+<br>
 Referensi: [Water quality classification using machine learning algorithms](https://www.sciencedirect.com/science/article/pii/S2214714422003646)
 
 ## Business Understanding
@@ -43,6 +44,14 @@ Informasi dataset:
 + Trihalomethanes: Jumlah Trihalometana dalam μg/L.
 + Turbidity: Ukuran sifat pemancar cahaya air di NTU(tingkat kekeruhan air)
 + Potability: Menunjukkan apakah air aman untuk dikonsumsi manusia. Dapat diminum 1 dan Tidak dapat diminum 0
+
+#### Missing value
+Kita akan menggunakan fungsi isnull().sum() untuk mengetahui jumlah missing value dan fitur yang memiliki missing value
+![miss_val](https://github.com/Padmanaba231/Predictive-Analytic/blob/b36de2186af691f566a13d4f6db7203bfab67c4c/ML/IMG/Screenshot%202024-02-21%20173813.png)
+
+### Exploratory Data Analys
+
+
 
 
 
