@@ -38,6 +38,11 @@ Informasi dataset:
 + Solids: Total padatan terlarut dalam ppm(part per million)
 + Chloramines: Jumlah Kloramin dalam ppm(part per million)
 + Sulfate: Jumlah Sulfat yang dilarutkan dalam mg/L
++ Conductivity: Konduktivitas listrik air dalam μS/cm
++ Organic_carbon: Jumlah karbon organik dalam ppm(part per million)
++ Trihalomethanes: Jumlah Trihalometana dalam μg/L.
++ Turbidity: Ukuran sifat pemancar cahaya air di NTU(tingkat kekeruhan air)
++ Potability: Menunjukkan apakah air aman untuk dikonsumsi manusia. Dapat diminum 1 dan Tidak dapat diminum 0
 
 
 
