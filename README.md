@@ -25,3 +25,24 @@ Berdasarkan latar belakang di atas, kita dapat menentukan pernyataan masalah seb
 
 # Data Understanding
 Dataset yang digunakan dalam proyek ini merupakan data yang berisikan beberapa parameter yang digunakan dalam menentukan kualitas air. Dataset ini dapat diunduh di [Kaggle: Water Quality](https://www.kaggle.com/datasets/adityakadiwal/water-potability/data)
+
+Informasi dataset:
++ Dataset dalam format CSV (Comma-Seperated Values)
++ Dataset ini memiliki 10 fitur dengan 3276 sample
++ Data set memiliki 9 fitur bertipe float64 dan 1 fitur bertipe int64
++ Terdapat missing value pada dataset
+
+### Variable pada dataset
++ pH value: Nilai pH air (tingkat keasaman suatu cairan)
++ Hardness: Kandungan mineral-mineral dalam air yaitu, ion kalsium (Ca) dan magnesium (Mg) dalam bentuk garam karbonat.
++ Solids: Total padatan terlarut dalam ppm(part per million)
++ Chloramines: Jumlah Kloramin dalam ppm(part per million)
++ Sulfate: Jumlah Sulfat yang dilarutkan dalam mg/L
+
+
+
+
+
+
+
+
