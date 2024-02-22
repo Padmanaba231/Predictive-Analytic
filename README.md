@@ -113,12 +113,31 @@ KNN memerlukan penentuan nilai <strong>K</strong> yang tepat agar model dapat be
 ## SVC
 SVC sebenarnya termasuk kedalam algoritma SVM(Support Vector Machine). SVM merupakan model Machine Learning multifungsi yang dapat digunakan untuk menyelesaikan permasalahan klasifikasi, regresi, dan pendeteksian outlier. Algoritma Support Vector Machine (SVM) bertujuan untuk mengidentifikasi hyperplane optimal dalam ruang berdimensi-N (dengan N fitur) yang dapat efektif memisahkan titik-titik data input secara optimal. Pada kasus klasifikasi menggunakan SVC(Support Vector Classifier).
 
-### Tahapan Kerja SVC secara umum
+#### Tahapan Kerja SVC secara umum
 + SVC berupaya menemukan hyperplane yang memisahkan dua atau lebih kelas secara optimal. Hyperplane ini memiliki sifat yang dapat memaksimalkan margin, yaitu jarak antara hyperplane dan titik-titik terdekat dari setiap kelas, yang disebut sebagai Support Vectors.
 + SVM berusaha untuk memaksimalkan margin ini, karena margin yang lebih besar memberikan tingkat kepercayaan yang lebih baik terhadap klasifikasi yang dilakukan oleh model.
 + Ketika data tidak dapat dipisahkan secara linier, SVC menggunakan konsep kernel untuk mentransformasikan data ke ruang fitur yang lebih tinggi. Kernel membantu model SVC menangani kasus-kasus di mana batas keputusan antara kelas tidak dapat dijelaskan secara linear dalam ruang fitur asli.
 + Setelah menemukan hyperplane yang optimal, SVC menggunakan batas keputusan untuk mengklasifikasikan data baru. Data yang berada di satu sisi hyperplane dianggap sebagai satu kelas, sedangkan data di sisi lainnya dianggap sebagai kelas yang berbeda.
 
 Pada proyek ini menggunakan nilai parameter <strong>C</strong> sebesar 5. Parameter C pada model Support Vector Classifier (SVC) menentukan sejauh mana model ini akan memberikan toleransi terhadap kesalahan klasifikasi pada data pelatihan. Parameter ini disebut juga sebagai parameter penalti kesalahan (error penalty) atau parameter keberatan (regularization parameter). Parameter selain parameter <strong>C</strong> menggunakan parameter default SVC.
+#### Kelebihan & Kekurangan SVC
+##### Kelebihan 
++ SVC dapat bekerja dengan baik bahkan dalam ruang fitur yang memiliki dimensi tinggi, karena mampu menangani kompleksitas data.
++ Melalui penggunaan kernel, SVC dapat menangani data yang tidak dapat dipisahkan secara linier dalam ruang fitur asli(menggunakan kernel).
++ Dengan adanya margin dan fungsi soft margin, SVC dapat menjadi tahan terhadap pengaruh dari data pencilan (outliers).
 
+##### Kekurangan
++ Proses pelatihan pada SVC dapat menjadi komputasi yang intensif, terutama pada dataset besar, karena melibatkan perhitungan jarak dan optimasi yang kompleks.
++ SVC mungkin kurang efisien pada dataset yang sangat besar atau memiliki banyak fitur, karena dapat memerlukan memori yang signifikan dan waktu komputasi yang lebih lama.
 
+## Random Forest
+Random Forest merupakan model prediksi yang menggunakan teknik bagging dengan menggabungkan beberapa model untuk bekerja secara kolaboratif. Konsep di balik model ensemble adalah grup model yang bekerja bersama-sama untuk menyelesaikan suatu masalah, yang dapat menghasilkan tingkat keberhasilan yang lebih tinggi daripada model yang beroperasi secara independen. Pada model ensemble, setiap model membuat prediksi secara independen, dan hasil prediksi dari masing-masing model tersebut digabungkan untuk membentuk prediksi akhir.
+Teknik bagging ini cocok diterapkan pada algoritma decision tree. Random forest, pada dasarnya, merupakan bentuk bagging dari algoritma decision tree. Anda dapat membayangkan random forest sebagai sebuah tas (bag) yang berisi beberapa model decision tree. Setiap model decision tree memiliki hyperparameter yang berbeda dan dilatih pada subset data yang berbeda. Strategi pembagian data pada algoritma decision tree melibatkan pemilihan acak sejumlah fitur dan sampel dari dataset yang terdiri dari n fitur dan m sampel.
+Inilah sebabnya mengapa algoritma ini disebut sebagai random forest, karena terdiri dari banyak pohon keputusan (decision tree) di mana pembagian data dan fitur dilakukan secara acak.
+
+#### Tahapan Umum Random Forest
++ Membangun decision tree untuk setiap subsample data yang telah dipilih. Pada tahap ini, juga dilakukan pemilihan acak sejumlah fitur yang akan digunakan untuk membagi setiap simpul dalam decision tree.
++ Menggunakan setiap decision tree yang telah dibangun untuk membuat prediksi pada data yang tidak terlihat (testing) atau data validasi. Setiap decision tree memberikan prediksi berdasarkan fitur yang dipilih secara acak.
++ Pada tahap ini, hasil prediksi dari setiap decision tree dijumlahkan (voting) jika tugasnya klasifikasi, atau diambil rata-ratanya jika tugasnya regresi. Ini menghasilkan prediksi akhir dari Random Forest.
+
+Pada proyek ini menggunakan nilai parameter <strong>n_estimators=110</strong>, <strong>max_depth=16</strong>, <strong>random_state=126</strong>, <strong>n_jobs=1</strong>. 
