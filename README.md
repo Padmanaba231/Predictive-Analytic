@@ -84,5 +84,7 @@ Kita akan membagi dataset menjadi data latih dan data uji. Data latih akan digun
 <br>
 Seperti yang telah kita ketahui sebelumnya, data kita mengalami ketidakseimbangan. Kita akan menangani hal ini menggunakan metode oversampling dengan bantuan fitur SMOTE. Kita akan mencoba menyeimbangkan dataset dengan meningkatkan ukuran sampel langka. Daripada membuang sampel berlimpah, sampel langka baru dihasilkan dengan menggunakan fitur SMOTE (Sintetis Minoritas Sampling Teknik). Setelah menerapkan metode ini, data kita akan lebih seimbang yang diharapkan dapat meningkatkan kinerja model kita nantinya.
 
+### Standarisasi
+Algoritma machine learning cenderung memberikan hasil yang lebih baik dan konvergen lebih cepat ketika data memiliki skala yang seragam atau mendekati distribusi normal. Untuk mencapai ini, proses scaling dan standarisasi sangat membantu dalam mengubah bentuk fitur data sehingga lebih mudah dipahami dan diolah oleh algoritma. Kita akan memanfaatkan fungsi standarisasi yang dimiliki oleh liblary sklearn.
 
 
