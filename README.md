@@ -50,7 +50,11 @@ Kita akan menggunakan fungsi isnull().sum() untuk mengetahui jumlah missing valu
 ![miss_val](https://github.com/Padmanaba231/Predictive-Analytic/blob/b36de2186af691f566a13d4f6db7203bfab67c4c/ML/IMG/Screenshot%202024-02-21%20173813.png)
 
 ### Exploratory Data Analys
-
+#### Persebaran data
+![persebaran data](https://github.com/Padmanaba231/Predictive-Analytic/blob/817f7bfa75f005b46b62e11afce5f3669fa59502/ML/IMG/Screenshot%202024-02-21%20174418.png)
+<br>
+Jika kita memperhatikan persebaran data pada gambar, persebaran data relatif seimbang kecuali pada fitur "Potability". Jika kita perhatikan lebih detail pada fitur "Potability" akan menampilkan grafik seperti berikut:
+![grafik batang](https://github.com/Padmanaba231/Predictive-Analytic/blob/76936eba73623adb809da3c0622d5607f7f41801/ML/IMG/Screenshot%202024-02-22%20144156.png)
 
 
 
