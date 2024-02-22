@@ -78,6 +78,11 @@ Kita akan membagi dataset menjadi data latih dan data uji. Data latih akan digun
 <br>
 
 #### Balancing data menggunakan SMOTE
+<br>
+<div><img src="https://github.com/Padmanaba231/Predictive-Analytic/blob/8e6f181e97942945bd355c3284118a6722e4043a/ML/IMG/1_CeOd_Wbn7O6kpjSTKTIUog.png" width="600"/></div>
+<br>
+<br>
+Seperti yang telah kita ketahui sebelumnya, data kita mengalami ketidakseimbangan. Kita akan menangani hal ini menggunakan metode oversampling dengan bantuan fitur SMOTE. Kita akan mencoba menyeimbangkan dataset dengan meningkatkan ukuran sampel langka. Daripada membuang sampel berlimpah, sampel langka baru dihasilkan dengan menggunakan fitur SMOTE (Sintetis Minoritas Sampling Teknik). Setelah menerapkan metode ini, data kita akan lebih seimbang yang diharapkan dapat meningkatkan kinerja model kita nantinya.
 
 
 
