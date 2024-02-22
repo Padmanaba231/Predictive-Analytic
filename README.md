@@ -63,7 +63,14 @@ Dari grafik ini kita bisa melihat bahwa terdapat ketidakseimbangan data. Hal ini
 Kita akan menghitung korelasi antar fitur yang ada menggunakan bantuan metode heatmap correlation. Didapatkan hasil heatmap sebagai berikut:
 <br>
 ![heatmap_correl](https://github.com/Padmanaba231/Predictive-Analytic/blob/0d5e37e67b8f9cd04ae5f2f344fc8736d802e2a0/ML/IMG/Screenshot%202024-02-22%20144950.png)
+<br>
 Berdasarkan gambar di atas, kita mendapatkan hasil dari setiap korelasi antar fitur yang kita miliki. Jika diperhatikan, setiap fitur yang kita miliki pada dataset ternyata memiliki korelasi yang rendah. Dari sini kita bisa berasumsi bahwa fitur-fitur yang kita miliki pada dataset tidak memiliki pengaruh yang kuat dalam menentukan air yang layak untuk dikonsumsi. Asumsi ini nanti kita buktikan pada tahapan evaluasi model.
+
+# Data Preparation
+#### Menangani Missing Value
+Seperti yang sudah dijelaskan sebelumnya, data kita memiliki beberapa missing value. Kita memiliki missing value pada fitur "ph", "Sulfate", "Trihalomethanes". Karena jumlah missing value yang tidak sedikit, kita tidak bisa asal meng-drop/menghapus missing value yang kita miliki untuk menghindari kehilangan informasi yang sebenarnya berguna untuk membangun model. Pada kasus ini, kita akan mengisi missing value dengan nilai rata-rata fitur pada setiap kelas.
+<br>
+![snapshoot_missing](https://github.com/Padmanaba231/Predictive-Analytic/blob/90917425ff569a4d11efac72aa7098b461db9e42/ML/IMG/Screenshot%202024-02-22%20151351.png)
 
 
 
