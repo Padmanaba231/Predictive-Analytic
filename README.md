@@ -55,7 +55,13 @@ Kita akan menggunakan fungsi isnull().sum() untuk mengetahui jumlah missing valu
 <br>
 Jika kita memperhatikan persebaran data pada gambar, persebaran data relatif seimbang kecuali pada fitur "Potability". Jika kita perhatikan lebih detail pada fitur "Potability" akan menampilkan grafik seperti berikut:
 ![grafik batang](https://github.com/Padmanaba231/Predictive-Analytic/blob/76936eba73623adb809da3c0622d5607f7f41801/ML/IMG/Screenshot%202024-02-22%20144156.png)
-
+<br>
+Dari grafik ini kita bisa melihat bahwa terdapat ketidakseimbangan data. Hal ini tentunya tidak baik karena dapat mengakibatkan bias terhadap model Machine Learning yang akan kita buat nantinya. Masalah ketidakseimbangan data ini akan diselesaikan pada bagian data preparation.
+<br>
+<br>
+### Korelasi antar fitur
+Kita akan menghitung korelasi antar fitur yang ada menggunakan bantuan metode heatmap correlation. Didapatkan hasil heatmap sebagai berikut:
+![heatmap_correl](https://github.com/Padmanaba231/Predictive-Analytic/blob/0d5e37e67b8f9cd04ae5f2f344fc8736d802e2a0/ML/IMG/Screenshot%202024-02-22%20144950.png)
 
 
 
