@@ -70,7 +70,11 @@ Berdasarkan gambar di atas, kita mendapatkan hasil dari setiap korelasi antar fi
 #### Menangani Missing Value
 Seperti yang sudah dijelaskan sebelumnya, data kita memiliki beberapa missing value. Kita memiliki missing value pada fitur "ph", "Sulfate", "Trihalomethanes". Karena jumlah missing value yang tidak sedikit, kita tidak bisa asal meng-drop/menghapus missing value yang kita miliki untuk menghindari kehilangan informasi yang sebenarnya berguna untuk membangun model. Pada kasus ini, kita akan mengisi missing value dengan nilai rata-rata fitur pada setiap kelas.
 <br>
-![snapshoot_missing](https://github.com/Padmanaba231/Predictive-Analytic/blob/90917425ff569a4d11efac72aa7098b461db9e42/ML/IMG/Screenshot%202024-02-22%20151351.png)
+<div><img src="https://github.com/Padmanaba231/Predictive-Analytic/blob/ca08cce50cd243455119df9f9b07cda5c08a07ee/ML/IMG/Screenshot%202024-02-22%20151351.png" width="600"/></div>
+
+
+
+
 
 
 
