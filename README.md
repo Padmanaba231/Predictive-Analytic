@@ -72,9 +72,11 @@ Seperti yang sudah dijelaskan sebelumnya, data kita memiliki beberapa missing va
 <br>
 <div><img src="https://github.com/Padmanaba231/Predictive-Analytic/blob/ca08cce50cd243455119df9f9b07cda5c08a07ee/ML/IMG/Screenshot%202024-02-22%20151351.png" width="600"/></div>
 <br>
+
 #### Membagi dataset
 Kita akan membagi dataset menjadi data latih dan data uji. Data latih akan digunakan untuk membangun model, sedangkan data uji akan digunakan untuk menguji performa model. Kita menggunakan metode train_test_split dari liblary sklearn. Rasio dari pambagian dataset sebesar 75% untuk data latih dan 25% untuk data uji. Data latih digunakan untuk melatih model kita sementara data uji digunakan untuk mengevaluasi model kita. Perlu diperhatikan bahwa kita harus melakukan pembagian terlebih dahulu sebelum melakukan standarisasi. Hal ini dilakukan agar tidak terjadi kebocoran informasi pada data uji. Selain itu, ketika ingin menyeimbangkan persebaran data menggunakan metode oversampling, kita dapat menerapkan oversampling pada data latih saja.
 <br>
+
 #### Balancing data menggunakan SMOTE
 
 
