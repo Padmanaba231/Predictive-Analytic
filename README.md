@@ -87,4 +87,20 @@ Seperti yang telah kita ketahui sebelumnya, data kita mengalami ketidakseimbanga
 ### Standarisasi
 Algoritma machine learning cenderung memberikan hasil yang lebih baik dan konvergen lebih cepat ketika data memiliki skala yang seragam atau mendekati distribusi normal. Untuk mencapai ini, proses scaling dan standarisasi sangat membantu dalam mengubah bentuk fitur data sehingga lebih mudah dipahami dan diolah oleh algoritma. Kita akan memanfaatkan fungsi standarisasi yang dimiliki oleh liblary sklearn.
 
+# Modeling
+Proyek ini menggunakan 3 algoritma Machine Learning:
+1. KNN (K-Nearest Neighbour)
+2. SVC (Suport Vector Classification)
+3. Random Forest
+
+## KNN
+KNN merupakan singkatan dari K-Nearest Neighbor,algoritma ini bekerja dengan prinsip bahwa objek/kelas yang mirip cenderung berada pada jarak yang dekat satu sama lain.Dengan kata lain, data yang memiliki karakteristik serupa akan cenderung saling bertetangga dalam ruang fitur. Hal inilah yang membuat KNN salah satu algoritma yang cocok untuk menyelesaikan kasus klasifikasi. 
+### Tahapan Kerja Umum KNN
++ <strong>Menentukan nilai K </strong>
+Memilih jumlah tetangga terdekat (K) yang akan digunakan untuk memutuskan kelas suatu data baru. 
++ Mengukur jarak
+Hitung jarak antara data baru yang akan diprediksi dengan setiap titik data dalam set pelatihan. 
++ Memilih tetangga
+Menentukan K tetangga berdasarkan jarak terkecil. Ini merupakan data pelatihan yang memiliki nilai atribut paling mirip dengan data baru.
+
 
