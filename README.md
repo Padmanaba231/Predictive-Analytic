@@ -61,6 +61,7 @@ Dari grafik ini kita bisa melihat bahwa terdapat ketidakseimbangan data. Hal ini
 <br>
 ### Korelasi antar fitur
 Kita akan menghitung korelasi antar fitur yang ada menggunakan bantuan metode heatmap correlation. Didapatkan hasil heatmap sebagai berikut:
+<br>
 ![heatmap_correl](https://github.com/Padmanaba231/Predictive-Analytic/blob/0d5e37e67b8f9cd04ae5f2f344fc8736d802e2a0/ML/IMG/Screenshot%202024-02-22%20144950.png)
 
 
