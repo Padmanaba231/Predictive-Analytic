@@ -95,12 +95,18 @@ Proyek ini menggunakan 3 algoritma Machine Learning:
 
 ## KNN
 KNN merupakan singkatan dari K-Nearest Neighbor,algoritma ini bekerja dengan prinsip bahwa objek/kelas yang mirip cenderung berada pada jarak yang dekat satu sama lain.Dengan kata lain, data yang memiliki karakteristik serupa akan cenderung saling bertetangga dalam ruang fitur. Hal inilah yang membuat KNN salah satu algoritma yang cocok untuk menyelesaikan kasus klasifikasi. 
-### Tahapan Kerja Umum KNN
-+ <strong>Menentukan nilai K </strong>
-Memilih jumlah tetangga terdekat (K) yang akan digunakan untuk memutuskan kelas suatu data baru. 
-+ Mengukur jarak
-Hitung jarak antara data baru yang akan diprediksi dengan setiap titik data dalam set pelatihan. 
-+ Memilih tetangga
-Menentukan K tetangga berdasarkan jarak terkecil. Ini merupakan data pelatihan yang memiliki nilai atribut paling mirip dengan data baru.
+#### Tahapan Kerja Umum KNN
++ Memilih jumlah tetangga terdekat (K) yang akan digunakan untuk memutuskan kelas suatu data baru. 
++ Hitung jarak antara data baru yang akan diprediksi dengan setiap titik data dalam set pelatihan. 
++ Menentukan K tetangga berdasarkan jarak terkecil. Ini merupakan data pelatihan yang memiliki nilai atribut paling mirip dengan data baru.
++ Lakukan prehitungan mayoritas di antara tetangga terpilih untuk menentukan kelas dari data baru. Artinya, kelas yang paling umum di antara K tetangga tersebut akan menjadi prediksi kelas untuk data baru.
+
+Pada kasus proyek ini menggunakan <strong>n_neighbors = 30</strong> tetangga. Penentuan nilai <strong>K</strong> sangat berpengaruh pada kinerja model. Setelah mencoba berbagai nilai <strong>K</strong> didapatkan nilai <strong>K</strong> yang terbaik adalah sebesar 30. Untuk parameter yang lain, pada proyek ini menggunakan parameter default
+
+#### Kelebihan & Kekurangan KNN
+##### Kelebihan
+Algoritma KNN relatif sederhana dan mudah dipahami. Konsep dasarnya cukup simple, yaitu mengambil mayoritas kelas dari tetangga terdekat. Algoritma KNN cocok untuk data non linear karena KNN dapat bekerja dengan baik pada data yang memiliki batas keputusan non-linier atau kompleks.
+##### Kekurangan
+KNN memerlukan penentuan nilai <strong>K</strong> yang tepat agar model dapat bekerja dengan baik. Nilai K yang terlalu kecil dapat menyebabkan model sensitif terhadap noise, sedangkan nilai K yang terlalu besar dapat menyebabkan model terlalu halus dan kurang responsif terhadap perubahan lokal dalam data.
 
 
