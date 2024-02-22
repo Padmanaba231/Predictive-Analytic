@@ -119,6 +119,6 @@ SVC sebenarnya termasuk kedalam algoritma SVM(Support Vector Machine). SVM merup
 + Ketika data tidak dapat dipisahkan secara linier, SVC menggunakan konsep kernel untuk mentransformasikan data ke ruang fitur yang lebih tinggi. Kernel membantu model SVC menangani kasus-kasus di mana batas keputusan antara kelas tidak dapat dijelaskan secara linear dalam ruang fitur asli.
 + Setelah menemukan hyperplane yang optimal, SVC menggunakan batas keputusan untuk mengklasifikasikan data baru. Data yang berada di satu sisi hyperplane dianggap sebagai satu kelas, sedangkan data di sisi lainnya dianggap sebagai kelas yang berbeda.
 
-
+Pada proyek ini menggunakan nilai parameter <strong>C</strong> sebesar 5. Parameter C pada model Support Vector Classifier (SVC) menentukan sejauh mana model ini akan memberikan toleransi terhadap kesalahan klasifikasi pada data pelatihan. Parameter ini disebut juga sebagai parameter penalti kesalahan (error penalty) atau parameter keberatan (regularization parameter). Parameter selain parameter <strong>C</strong> menggunakan parameter default SVC.
 
 
