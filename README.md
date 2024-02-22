@@ -108,6 +108,17 @@ Pada kasus proyek ini menggunakan <strong>n_neighbors = 30</strong> tetangga. Pe
 ##### Kelebihan
 Algoritma KNN relatif sederhana dan mudah dipahami. Konsep dasarnya cukup simple, yaitu mengambil mayoritas kelas dari tetangga terdekat. Algoritma KNN cocok untuk data non linear karena KNN dapat bekerja dengan baik pada data yang memiliki batas keputusan non-linier atau kompleks.
 ##### Kekurangan
-KNN memerlukan penentuan nilai <strong>K</strong> yang tepat agar model dapat bekerja dengan baik. Nilai K yang terlalu kecil dapat menyebabkan model sensitif terhadap noise, sedangkan nilai K yang terlalu besar dapat menyebabkan model terlalu halus dan kurang responsif terhadap perubahan lokal dalam data.
+KNN memerlukan penentuan nilai <strong>K</strong> yang tepat agar model dapat bekerja dengan baik. Nilai <strong>K</strong> yang terlalu kecil dapat menyebabkan model sensitif terhadap noise, sedangkan nilai <strong>K</strong> yang terlalu besar dapat menyebabkan model terlalu halus dan kurang responsif terhadap perubahan lokal dalam data.
+
+## SVC
+SVC sebenarnya termasuk kedalam algoritma SVM(Support Vector Machine). SVM merupakan model Machine Learning multifungsi yang dapat digunakan untuk menyelesaikan permasalahan klasifikasi, regresi, dan pendeteksian outlier. Algoritma Support Vector Machine (SVM) bertujuan untuk mengidentifikasi hyperplane optimal dalam ruang berdimensi-N (dengan N fitur) yang dapat efektif memisahkan titik-titik data input secara optimal. Pada kasus klasifikasi menggunakan SVC(Support Vector Classifier).
+
+### Tahapan Kerja SVC secara umum
++ SVC berupaya menemukan hyperplane yang memisahkan dua atau lebih kelas secara optimal. Hyperplane ini memiliki sifat yang dapat memaksimalkan margin, yaitu jarak antara hyperplane dan titik-titik terdekat dari setiap kelas, yang disebut sebagai Support Vectors.
++ SVM berusaha untuk memaksimalkan margin ini, karena margin yang lebih besar memberikan tingkat kepercayaan yang lebih baik terhadap klasifikasi yang dilakukan oleh model.
++ Ketika data tidak dapat dipisahkan secara linier, SVC menggunakan konsep kernel untuk mentransformasikan data ke ruang fitur yang lebih tinggi. Kernel membantu model SVC menangani kasus-kasus di mana batas keputusan antara kelas tidak dapat dijelaskan secara linear dalam ruang fitur asli.
++ Setelah menemukan hyperplane yang optimal, SVC menggunakan batas keputusan untuk mengklasifikasikan data baru. Data yang berada di satu sisi hyperplane dianggap sebagai satu kelas, sedangkan data di sisi lainnya dianggap sebagai kelas yang berbeda.
+
+
 
 
