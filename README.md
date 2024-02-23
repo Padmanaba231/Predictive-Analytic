@@ -155,6 +155,15 @@ Pada bagian Business Understanding kita ingin mengetahui dan memilih algoritma y
 Pada Proyek ini menggunakan model machine learning bertipe klasifikasi yang berarti Jika prediksi cocok dengan label kelas sebenarnya, performanya baik. Sedangkan jika tidak, performanya buruk. Secara teknis, perbedaan antara kelas sebenarnya dan kelas yang diprediksi disebut kesalahan klasifikasi. Maka, semua metrik mengukur seberapa kecil nilai kesalahan klasifikasi tersebut. Beberapa metrik yang akan kita gunakan adalah accuracy, precision, recall, f1_score.
 <br>
 <div><img src="https://github.com/Padmanaba231/Predictive-Analytic/blob/1e5595f91d1606c2a49c3a54ef07b0e140191616/ML/IMG/Screenshot%202024-02-23%20163401.png" width="600"/></div>
+<br>
+Keterangan:
+True Positive (TP): Jumlah observasi positif yang benar-benar diprediksi sebagai positif oleh model.
+True Negative (TN): Jumlah observasi negatif yang benar-benar diprediksi sebagai negatif oleh model.
+False Positive (FP): Model salah memberi label pada data kategori negatif sebagai positif.
+False Negative (FP): Model salah memberi label pada data kategori positif sebagai negatif.
+
+
+<strong>Accuracy</strong> mengukur persentase prediksi yang tepat dari total prediksi yang dilakukan. Skor akurasi berkisar antara 0 hingga 1, di mana nilai 1 mencerminkan prediksi yang sempurna, sementara nilai 0 menunjukkan bahwa tidak ada prediksi yang benar. <strong>Precision</strong> mengukur rasio prediksi positif yang akurat dari total prediksi positif yang dibuat. Presisi memberikan wawasan tentang seberapa tepat model machine learning dalam membuat prediksi positif. Rentang nilai presisi adalah antara 0 hingga 1, di mana nilai 1 menunjukkan tingkat presisi tertinggi, sementara nilai 0 menandakan ketidakakuratan total dalam prediksi positif. Recall mengukur proporsi data positif yang berhasil diidentifikasi dari total data positif yang sebenarnya. <strong>Recall</strong> memberikan gambaran tentang seberapa efektif model machine learning dalam menemukan semua data positif yang ada. Rentang nilai recall adalah antara 0 hingga 1, di mana nilai 1 mencerminkan kemampuan model dalam menemukan semua data positif, sementara nilai 0 menandakan bahwa model gagal mengidentifikasi data positif. <strong>F1 Score</strong> rata-rata harmonis dari precision dan recall. F1 Score adalah ukuran keseimbangan antara precision dan recall, dengan nilai yang tinggi menunjukkan keseimbangan yang baik antara kedua metrik tersebut.
 
 
 
