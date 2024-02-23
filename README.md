@@ -188,7 +188,7 @@ Keterangan:
 Dari tabel di atas kita bisa melihat bahwa ketiga model memiliki nilai evaluasi yang cukup kecil. Padalah ketiga model tersebut sangat cocok digunakan pada kasus ini yakni kasus klasifikasi. Hal ini mungkin disebabkan korelasi antar fitur pada dataset yang rendah, mengakibatkan evaluasi model yang rendah juga. Dari tabel tersebut kita juga mendapatkan informasi bahwa model <trong>Random Forest</strong> memiliki nilai evaluasi yang paling tinggi. Ini berarti pernyataan kita sebelumnya bahwa <trong>Random Forest</strong> merupakan model terbaik diantara model lain yang kita gunakan adalah benar.
 
 
-##Kesimpulan 
+## Kesimpulan 
 Berdasarkan dari apa yang telah kita lakukan selama ini, kita dapat menjawab semua dari problem statement yang kita nyatakan sebelumnya. Pertama, pengaruh fitur pada dataset dalam menentukan kelayakan konsumsi air terbilang rendah. Hal ini dikarenakan korelasi antar fitur pada dataset memiliki nilai yang rendah. Hal ini juga didukung oleh fakta bahwa ketiga model memiliki niali evaluasi yang relatif rendah terhadap dataset yang kita gunakan. Kedua, cara yang kita gunakan agar data dapat dilatih dengan baik oleh model dengan beberapa metode. Mulai dari menangani missing value, membagi dataset menjadi data latih dan data uji, menangani ketidakseimbangan data menggunakan metode oversampling, hingga melakukan standarisasi pada data. Ketiga, algoritma yang memiliki kinerja paling baik terhadap dataset yang kita miliki adalah algoritma <trong>Random Forest</strong>. Hal ini dibuktikan <trong>Random Forest</strong> memiliki nilai evaluasi tertinggi diantara model lainnya.
 
 
