@@ -102,7 +102,7 @@ KNN merupakan singkatan dari K-Nearest Neighbor,algoritma ini bekerja dengan pri
 + Menentukan K tetangga berdasarkan jarak terkecil. Ini merupakan data pelatihan yang memiliki nilai atribut paling mirip dengan data baru.
 + Lakukan prehitungan mayoritas di antara tetangga terpilih untuk menentukan kelas dari data baru. Artinya, kelas yang paling umum di antara K tetangga tersebut akan menjadi prediksi kelas untuk data baru.
 
-Pada kasus proyek ini menggunakan <strong>n_neighbors = 30</strong> tetangga. Penentuan nilai <strong>K</strong> sangat berpengaruh pada kinerja model. Setelah mencoba berbagai nilai <strong>K</strong> didapatkan nilai <strong>K</strong> yang terbaik adalah sebesar 30. Untuk parameter yang lain, pada proyek ini menggunakan parameter default
+Pada kasus proyek ini menggunakan <strong>n_neighbors = 25</strong> tetangga. Penentuan nilai <strong>K</strong> sangat berpengaruh pada kinerja model. Setelah mencoba berbagai nilai <strong>K</strong> didapatkan nilai <strong>K</strong> yang terbaik adalah sebesar 25. Untuk parameter yang lain, pada proyek ini menggunakan parameter default
 
 #### Kelebihan & Kekurangan KNN
 ##### Kelebihan
@@ -140,4 +140,26 @@ Inilah sebabnya mengapa algoritma ini disebut sebagai random forest, karena terd
 + Menggunakan setiap decision tree yang telah dibangun untuk membuat prediksi pada data yang tidak terlihat (testing) atau data validasi. Setiap decision tree memberikan prediksi berdasarkan fitur yang dipilih secara acak.
 + Pada tahap ini, hasil prediksi dari setiap decision tree dijumlahkan (voting) jika tugasnya klasifikasi, atau diambil rata-ratanya jika tugasnya regresi. Ini menghasilkan prediksi akhir dari Random Forest.
 
-Pada proyek ini menggunakan nilai parameter <strong>n_estimators=110</strong>, <strong>max_depth=16</strong>, <strong>random_state=126</strong>, <strong>n_jobs=1</strong>. 
+Pada proyek ini menggunakan nilai parameter <strong>n_estimators=110</strong>, <strong>max_depth=16</strong>, <strong>random_state=126</strong>, <strong>n_jobs=1</strong>. <strong>n_estimators</strong> menentukan jumlah pohon keputusan yang akan dibangun dalam ensemble (hutan). <strong>max_depth</strong>  menentukan kedalaman maksimum dari setiap pohon keputusan dalam ensemble. <strong>random_state=126</strong> menentukan seed untuk menghasilkan angka acak. Sehingga model menghasilkan yang sama setiap dilatih.  <strong>n_jobs=1</strong> menentukan jumlah pekerjaan paralel yang akan digunakan selama pelatihan. Selain parameter diatas menggunakan parameter default.
+
+#### Kelebihan dan Kekurangan Random Forest
+##### Kelebihan
+Random Forest biasanya memberikan akurasi yang tinggi karena menggabungkan prediksi dari beberapa tree decision yang berbeda. Karena menggunakan banyak pohon keputusan dan mengambil rata-rata atau modus dari prediksi mereka, Random Forest cenderung lebih tahan terhadap overfitting dibandingkan dengan tree dicision tunggal.
+##### Kekurangan
+Random Forest dapat menghasilkan model yang cukup besar, terutama jika jumlah pohon dan fitur cukup besar. Ini dapat menjadi masalah jika perlu mengoptimalkan penggunaan memori atau mempercepat waktu prediksi.
+
+#### Pemilihan Model
+Pada bagian Business Understanding kita ingin mengetahui dan memilih algoritma yang paling baik. Ketiga algoritma yang kita pakai memiliki kelebihan dan kekurangannya masing-masing. Model yang terbaik baru bisa ditentukan setelah melewati tahap evaluasi model. Model yang mendapatkan hasil evaluasi tertinggi akan menjadi model yang paling baik.
+
+# Evaluation
+Pada Proyek ini menggunakan model machine learning bertipe klasifikasi yang berarti Jika prediksi cocok dengan label kelas sebenarnya, performanya baik. Sedangkan jika tidak, performanya buruk. Secara teknis, perbedaan antara kelas sebenarnya dan kelas yang diprediksi disebut kesalahan klasifikasi. Maka, semua metrik mengukur seberapa kecil nilai kesalahan klasifikasi tersebut. Beberapa metrik yang akan kita gunakan adalah accuracy, precision, recall, f1_score.
+<br>
+<div><img src="https://github.com/Padmanaba231/Predictive-Analytic/blob/1e5595f91d1606c2a49c3a54ef07b0e140191616/ML/IMG/Screenshot%202024-02-23%20163401.png" width="600"/></div>
+
+
+
+
+
+
+
+
