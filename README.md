@@ -192,6 +192,11 @@ Dari tabel di atas kita bisa melihat bahwa ketiga model memiliki nilai evaluasi 
 Berdasarkan dari apa yang telah kita lakukan selama ini, kita dapat menjawab semua dari problem statement yang kita nyatakan sebelumnya. Pertama, pengaruh fitur pada dataset dalam menentukan kelayakan konsumsi air terbilang rendah. Hal ini dikarenakan korelasi antar fitur pada dataset memiliki nilai yang rendah. Hal ini juga didukung oleh fakta bahwa ketiga model memiliki niali evaluasi yang relatif rendah terhadap dataset yang kita gunakan. Kedua, cara yang kita gunakan agar data dapat dilatih dengan baik oleh model dengan beberapa metode. Mulai dari menangani missing value, membagi dataset menjadi data latih dan data uji, menangani ketidakseimbangan data menggunakan metode oversampling, hingga melakukan standarisasi pada data. Ketiga, algoritma yang memiliki kinerja paling baik terhadap dataset yang kita miliki adalah algoritma <trong>Random Forest</strong>. Hal ini dibuktikan <trong>Random Forest</strong> memiliki nilai evaluasi tertinggi diantara model lainnya.
 
 
+![1_CeOd_Wbn7O6kpjSTKTIUog](https://github.com/Padmanaba231/Predictive-Analytic/assets/157343566/17a3c212-31a6-4e85-99df-8dbbd58450a2)
+
+
+
+
 
 
 
