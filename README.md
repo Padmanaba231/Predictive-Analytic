@@ -149,7 +149,7 @@ Random Forest biasanya memberikan akurasi yang tinggi karena menggabungkan predi
 Random Forest dapat menghasilkan model yang cukup besar, terutama jika jumlah pohon dan fitur cukup besar. Ini dapat menjadi masalah jika perlu mengoptimalkan penggunaan memori atau mempercepat waktu prediksi.
 
 #### Pemilihan Model
-Pada bagian Business Understanding kita ingin mengetahui dan memilih algoritma yang paling baik. Ketiga algoritma yang kita pakai memiliki kelebihan dan kekurangannya masing-masing. Model yang terbaik baru bisa ditentukan setelah melewati tahap evaluasi model. Model yang mendapatkan hasil evaluasi tertinggi akan menjadi model yang paling baik.
+Pada bagian Business Understanding kita ingin mengetahui dan memilih algoritma yang paling baik. Ketiga algoritma yang kita pakai memiliki kelebihan dan kekurangannya masing-masing. Berdasarkan kelebihan dan kelemahan tiap model, pada proyek ini kami memutuskan untuk memilih model <trong>Random Forest</strong> sebagai model terbaik. Hal ini dikarenakan Random Forest membangun banyak pohon keputusan secara parallel dan menggabungkan hasil prediksi mereka. Kemampuan ini membantu dalam menangani keragaman dan kompleksitas data dengan lebih baik daripada model tunggal seperti KNN atau SVM. Selain itu Random Forest dapat menangani dataset dengan jumlah fitur yang besar dan mampu mengatasi fitur-fitur yang tidak teratur atau tidak relevan. Hal ini sesuai dengan dataset kita yang memiliki nilai korelasi yang rendah antar fiturnya. Pada bagian Evaluation nantinya kita akan mengkonfirmasi apakah benar model <trong>Random Forest</strong> merupakan yang terbaik daripada model <trong>KNN</strong> dan juga <trong>SVC</strong>
 
 # Evaluation
 Pada Proyek ini menggunakan model machine learning bertipe klasifikasi yang berarti Jika prediksi cocok dengan label kelas sebenarnya, performanya baik. Sedangkan jika tidak, performanya buruk. Secara teknis, perbedaan antara kelas sebenarnya dan kelas yang diprediksi disebut kesalahan klasifikasi. Maka, semua metrik mengukur seberapa kecil nilai kesalahan klasifikasi tersebut. Beberapa metrik yang akan kita gunakan adalah accuracy, precision, recall, f1_score.
@@ -166,6 +166,8 @@ Keterangan:
 <br>
 <strong>False Negative (FP)</strong>: Model salah memberi label pada data kategori positif sebagai negatif.
 <br>
+<br>
+<br>
 
 
 <strong>Accuracy</strong> mengukur persentase prediksi yang tepat dari total prediksi yang dilakukan. Skor akurasi berkisar antara 0 hingga 1, di mana nilai 1 mencerminkan prediksi yang sempurna, sementara nilai 0 menunjukkan bahwa tidak ada prediksi yang benar.
@@ -175,6 +177,19 @@ Keterangan:
 <strong>Recall</strong> memberikan gambaran tentang seberapa efektif model machine learning dalam menemukan semua data positif yang ada. Rentang nilai recall adalah antara 0 hingga 1, di mana nilai 1 mencerminkan kemampuan model dalam menemukan semua data positif, sementara nilai 0 menandakan bahwa model gagal mengidentifikasi data positif. 
 <br>
 <strong>F1 Score</strong> rata-rata harmonis dari precision dan recall. F1 Score adalah ukuran keseimbangan antara precision dan recall, dengan nilai yang tinggi menunjukkan keseimbangan yang baik antara kedua metrik tersebut.
+<br>
+<br>
+### Hasil Evaluasi Ketiga Model
+<br>
+<div><img src="https://github.com/Padmanaba231/Predictive-Analytic/blob/c5ffe142a2d8d6a05d8b9edb7ef60b7e48f4f64c/ML/IMG/Screenshot%202024-02-23%20165515.png" width="600"/></div>
+<br>
+<br>
+
+Dari tabel di atas kita bisa melihat bahwa ketiga model memiliki nilai evaluasi yang cukup kecil. Padalah ketiga model tersebut sangat cocok digunakan pada kasus ini yakni kasus klasifikasi. Hal ini mungkin disebabkan korelasi antar fitur pada dataset yang rendah, mengakibatkan evaluasi model yang rendah juga. Dari tabel tersebut kita juga mendapatkan informasi bahwa model <trong>Random Forest</strong> memiliki nilai evaluasi yang paling tinggi. Ini berarti pernyataan kita sebelumnya bahwa <trong>Random Forest</strong> merupakan model terbaik diantara model lain yang kita gunakan adalah benar.
+
+
+##Kesimpulan 
+Berdasarkan dari apa yang telah kita lakukan selama ini, kita dapat menjawab semua dari problem statement yang kita nyatakan sebelumnya. Pertama, pengaruh fitur pada dataset dalam menentukan kelayakan konsumsi air terbilang rendah. Hal ini dikarenakan korelasi antar fitur pada dataset memiliki nilai yang rendah. Hal ini juga didukung oleh fakta bahwa ketiga model memiliki niali evaluasi yang relatif rendah terhadap dataset yang kita gunakan. Kedua, cara yang kita gunakan agar data dapat dilatih dengan baik oleh model dengan beberapa metode. Mulai dari menangani missing value, membagi dataset menjadi data latih dan data uji, menangani ketidakseimbangan data menggunakan metode oversampling, hingga melakukan standarisasi pada data. Ketiga, algoritma yang memiliki kinerja paling baik terhadap dataset yang kita miliki adalah algoritma <trong>Random Forest</strong>. Hal ini dibuktikan <trong>Random Forest</strong> memiliki nilai evaluasi tertinggi diantara model lainnya.
 
 
 
